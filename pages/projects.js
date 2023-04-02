@@ -1,10 +1,10 @@
-import { Container, Heading, SimpleGrid, Box,  } from '@chakra-ui/react'
-import Section from '../components/section'
+import { Container, Heading, SimpleGrid } from '@chakra-ui/react'
 import { WorkGridItem } from '../components/grid-item'
 import Layout from '../components/layouts/article'
+import Section from '../components/section'
 import githubspace from '../public/images/projects/githubspace.png'
-import radiobox from '../public/images/projects/radiobox.png'
 import hash from '../public/images/projects/hash.png'
+import radiobox from '../public/images/projects/radiobox.png'
 import roland from '../public/images/projects/roland.png'
 
 const Works = () => (
@@ -50,7 +50,7 @@ const Works = () => (
         </Section>
       </SimpleGrid>
 
-     
+
     </Container>
   </Layout>
 )

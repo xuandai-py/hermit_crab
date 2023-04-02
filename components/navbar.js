@@ -1,10 +1,10 @@
-import { Container, Box, Link, Stack, Icon, Image, Text, Flex, Menu, MenuItem, Button, MenuList, MenuButton, IconButton, useColorModeValue } from '@chakra-ui/react'
-import { HamburgerIcon, StarIcon } from '@chakra-ui/icons'
+import { HamburgerIcon } from '@chakra-ui/icons';
+import { Box, Button, Container, Flex, Icon, IconButton, Image, Link, Menu, MenuButton, MenuItem, MenuList, Stack, Text, useColorModeValue } from '@chakra-ui/react';
+import NextLink from 'next/link';
+import { useRouter } from "next/router";
 import {
     IoLogoGithub
-} from 'react-icons/io5'
-import NextLink from 'next/link'
-import { useRouter } from "next/router";
+} from 'react-icons/io5';
 
 const LinkItem = ({ path, href, _target, children, ...props }) => {
     const active = path === href

@@ -65,7 +65,7 @@ const Home = () => (
             </BioSection>
           </Box>
           <Flex direction='column' >
-            <Heading fontSize='md' mb={2}>Here are a few tech stacks I've been working with recently:</Heading>
+            <Heading fontSize='md' mb={2}>Here are a few tech stacks I&#39;ve been working with recently:</Heading>
             <SimpleGrid columns={2} spacing={2} px={5}>
               {techStacks.map((tech, index) => (
                 <Flex gap={2} align='center' key={index}>
