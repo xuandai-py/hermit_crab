@@ -15,17 +15,21 @@ const LinkItem = ({ path, href, _target, children, ...props }) => {
     const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
 
     return (
-        <NextLink href={href} passHref>
-            <Link p={2} bg={active ? 'grassTeal' : undefined} color={active ? '#202023' : inactiveColor} display='flex' target={_target} {...props}>
-                {children}
-            </Link>
-        </NextLink>
+        // <NextLink href={href} passHref>
+        <Link as={NextLink} href={href}
+            p={2}
+            bg={active ? 'grassTeal' : undefined}
+            color={active ? '#202023' : inactiveColor}
+            display='flex' target={_target} {...props}>
+            {children}
+        </Link>
+        // </NextLink>
     )
 }
 
 const Navbar = props => {
     const { path } = props
-
+    console.log(path);
     return (
         <Box position="fixed" as="nav" w="100%" zIndex={1} {...props} bg='#08182F' px={{ base: 4, lg: 0 }}>
             <Container display="flex" p="2" maxW="container.lg" wrap="wrap" align="center" justify="space-between">
@@ -62,7 +66,7 @@ const Navbar = props => {
                         View Source
                     </LinkItem>
                     <Button variant='outline' colorScheme='teal'>
-                        <LinkItem className="resume-button" href="/static/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</LinkItem>
+                        <LinkItem className="resume-button" href="#" target="_blank" rel="noopener noreferrer">Resume</LinkItem>
                     </Button>
                 </Stack>
 
@@ -73,25 +77,23 @@ const Navbar = props => {
                             <MenuButton as={IconButton} icon={<HamburgerIcon />} variant="outline" aria-label="Options" />
                             <MenuList>
                                 <NextLink href="#about" passHref>
-                                    <MenuItem as={Link}><Text color='#1DB954'>01.</Text> About</MenuItem>
+                                    <MenuItem ><Text color='#1DB954'>01.</Text> About</MenuItem>
                                 </NextLink>
                                 <NextLink href="#projects" passHref>
-                                    <MenuItem as={Link}><Text color='#1DB954'>02.</Text> Projects</MenuItem>
+                                    <MenuItem ><Text color='#1DB954'>02.</Text> Projects</MenuItem>
                                 </NextLink>
                                 <NextLink href="#contact" passHref>
-                                    <MenuItem as={Link}><Text color='#1DB954'>03.</Text>Contact</MenuItem>
+                                    <MenuItem ><Text color='#1DB954'>03.</Text>Contact</MenuItem>
                                 </NextLink>
-                                <MenuItem
-                                    as={Link}
+                                 <MenuItem                                  
                                     target="_blank"
-                                    href="/static/resume.pdf"
-
+                                    href="#"
                                 >
                                     <Icon as={IoLogoGithub} mr={2} mt='-1px' color='#1DB954' />
                                     View Source
                                 </MenuItem>
                                 <Button variant='outline' colorScheme='teal' mt={1} width='full'>
-                                    <LinkItem className="resume-button" href="/static/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</LinkItem>
+                                    <LinkItem className="resume-button" href="#" target="_blank" rel="noopener noreferrer">Resume</LinkItem>
 
                                 </Button>
                             </MenuList>

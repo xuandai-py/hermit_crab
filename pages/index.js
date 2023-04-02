@@ -68,7 +68,7 @@ const Home = () => (
             <Heading fontSize='md' mb={2}>Here are a few tech stacks I've been working with recently:</Heading>
             <SimpleGrid columns={2} spacing={2} px={5}>
               {techStacks.map((tech, index) => (
-                <Flex gap={2} align='center'>
+                <Flex gap={2} align='center' key={index}>
                   <Image boxSize={4} mr={1} alt='hermit logo' src={`https://res.cloudinary.com/dxhl09emw/image/upload/v1677746843/radio/Frame_16_kqw1wj.svg`} borderRadius={'100%'} border={'3px solid #000'} />
                   <Text>{tech}</Text>
                 </Flex>
@@ -125,13 +125,6 @@ const Home = () => (
         </Heading>
         <Paragraph>
           Music, Flying stuffs,
-          {/* <Link href="https://illust.odoruinu.net/" target="_blank">
-            Drawing
-          </Link>
-          , Playing Drums,{' '}
-          <Link href="https://500px.com/p/craftzdog" target="_blank">
-            Photography
-          </Link> */}
         </Paragraph>
       </Section>
 
@@ -179,7 +172,7 @@ const Home = () => (
             </ListItem>
 
             <ListItem>
-              <Link href="https://facebook.com/craftzdog" target="_blank">
+              <Link href="https://www.facebook.com/profile.php?id=100006465675143" target="_blank">
                 <Button
                   variant="ghost"
                   colorScheme="teal"
