@@ -90,7 +90,7 @@ const Home = () => (
                 id="radiobox"
                 title="RadioBox"
                 thumbnail={radiobox}
-                path='https://radio-9od2ikeks-xuandai-py.vercel.app/'
+                path='https://radio-box.vercel.app/'
               >
                 A remake simple app that helps you to focus on studying-working, built in some easy soundtracks and lofi tracks style from youtube. Also feat with DND feature like Trello helps working more effecient.
               </WorkGridItem>
