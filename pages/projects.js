@@ -2,11 +2,11 @@ import { Container, Heading, SimpleGrid } from '@chakra-ui/react'
 import { WorkGridItem } from '../components/grid-item'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
-import githubspace from '../public/images/projects/githubspace.png'
-import portfolio from '../public/images/projects/portfolio.png'
 import codeeditor from '../public/images/projects/codeeditor.png'
-import iss from '../public/images/projects/iss.png'
+import githubspace from '../public/images/projects/githubspace.png'
 import hash from '../public/images/projects/hash.png'
+import iss from '../public/images/projects/iss.png'
+import portfolio from '../public/images/projects/portfolio.png'
 import radiobox from '../public/images/projects/radiobox.png'
 import roland from '../public/images/projects/roland.png'
 
@@ -20,7 +20,7 @@ const Works = () => (
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section>
           <WorkGridItem id="radiobox" title="RadioBox" thumbnail={radiobox} path='https://radio-9od2ikeks-xuandai-py.vercel.app/'>
-            A remake simple app that helps you to focus on studying-working, built in some easy soundtracks and lofi tracks style from youtube. Also feat with DND feature like Trello helps working more effecient.
+            This app combines the features of kanban boards with the added lofi-calm music and natural sound for a calming and focused work environment using youtube api.
           </WorkGridItem>
         </Section>
 
@@ -31,8 +31,7 @@ const Works = () => (
             thumbnail={githubspace}
             path="https://githubspace.daidesu.dev/"
           >
-            Easy track github profile with basic bio, stars, contributions,
-            ...etc
+            This project utilizes the GitHub API along with swr/chart to fetch and display personal GitHub profiles in a user-friendly format. View starred repositories, projects, activities, monitor and analyze contributions, making it easier to manage and showcase user work.
           </WorkGridItem>
         </Section>
 
@@ -43,7 +42,7 @@ const Works = () => (
             thumbnail={portfolio}
             path="https://daidesu.dev/"
           >
-            My personal portfolio
+            This project is a personal portfolio website built with Next.js and Chakra UI. It showcases all my relevant information includes side projects, bio, skills, and interests. It utilizes Next.js for server-rendered and static websites and Chakra UI for simple, modular, and accessible components.
           </WorkGridItem>
         </Section>
 
@@ -52,9 +51,9 @@ const Works = () => (
             id="code-editor"
             title="Code editor"
             thumbnail={codeeditor}
-            // path="https://githubspace.daidesu.dev/"
+            path="https://github.com/xuandai-py/code-editor"
           >
-            A simple code editor handle with HTML/CSS/JS
+            Editor is designed to transform and bundle JavaScript/HTML/CSS - React code into a live view in the browser. Quickly view the results of code changes. Suppose to work on more languages and bundler in future.
           </WorkGridItem>
         </Section>
 
@@ -65,7 +64,7 @@ const Works = () => (
             thumbnail={iss}
             path="https://whereistheiss.daidesu.dev/"
           >
-            Code editor handle with HTML/CSS/JS
+            Simple tracking the ISS in real time.
           </WorkGridItem>
         </Section>
 
