@@ -19,7 +19,7 @@ const Works = () => (
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section>
-          <WorkGridItem id="radiobox" title="RadioBox" thumbnail={radiobox} path='https://radio-9od2ikeks-xuandai-py.vercel.app/'>
+          <WorkGridItem id="radiobox" title="RadioBox" thumbnail={radiobox} path='https://radio-box.vercel.app/'>
             This app combines the features of kanban boards with the added lofi-calm music and natural sound for a calming and focused work environment using youtube api.
           </WorkGridItem>
         </Section>

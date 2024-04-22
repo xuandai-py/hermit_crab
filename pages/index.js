@@ -86,16 +86,8 @@ const Home = () => (
 
           <SimpleGrid columns={[1, 1, 2]} gap={6}>
             <Section>
-              <WorkGridItem
-                id="radiobox"
-                title="RadioBox"
-                thumbnail={radiobox}
-                path='https://radio-9od2ikeks-xuandai-py.vercel.app/'
-              >
-                A remake simple app that helps you to focus on studying-working,
-                built in some easy soundtracks and lofi tracks style from
-                youtube. Also feat with DND feature like Trello helps working
-                more effecient.
+              <WorkGridItem id="radiobox" title="RadioBox" thumbnail={radiobox} path='https://radio-box.vercel.app/'>
+                This app combines the features of kanban boards with the added lofi-calm music and natural sound for a calming and focused work environment using youtube api.
               </WorkGridItem>
             </Section>
             <Section>
@@ -105,8 +97,7 @@ const Home = () => (
                 path="https://githubspace.daidesu.dev"
                 thumbnail={githubspace}
               >
-                An easy track github profile with basic bio, stars,
-                contributions, ...etc
+                This project utilizes the GitHub API along with swr/chart to fetch and display personal GitHub profiles in a user-friendly format. View starred repositories, projects, activities, monitor and analyze contributions, making it easier to manage and showcase user work.
               </WorkGridItem>
             </Section>
           </SimpleGrid>
