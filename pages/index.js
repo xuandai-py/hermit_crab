@@ -187,6 +187,17 @@ const Home = () => (
                 />
                 <Text>Java</Text>
               </Flex>
+              <Flex gap={2} align="center">
+                <Image
+                  boxSize={4}
+                  mr={1}
+                  alt="hermit logo"
+                  src={`https://res.cloudinary.com/dxhl09emw/image/upload/v1677746843/radio/Frame_16_kqw1wj.svg`}
+                  borderRadius={"100%"}
+                  border={"3px solid #000"}
+                />
+                <Text>Linux/Windows OS</Text>
+              </Flex>
             </SimpleGrid>
           </Flex>
         </Box>
