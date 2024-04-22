@@ -3,6 +3,9 @@ import { WorkGridItem } from '../components/grid-item'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import githubspace from '../public/images/projects/githubspace.png'
+import portfolio from '../public/images/projects/portfolio.png'
+import codeeditor from '../public/images/projects/codeeditor.png'
+import iss from '../public/images/projects/iss.png'
 import hash from '../public/images/projects/hash.png'
 import radiobox from '../public/images/projects/radiobox.png'
 import roland from '../public/images/projects/roland.png'
@@ -16,8 +19,15 @@ const Works = () => (
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section>
-          <WorkGridItem id="radiobox" title="RadioBox" thumbnail={radiobox} path='https://radio-9od2ikeks-xuandai-py.vercel.app/'>
-            A remake simple app that helps you to focus on studying-working, built in some easy soundtracks and lofi tracks style from youtube. Also feat with DND feature like Trello helps working more effecient.
+          <WorkGridItem
+            id="radiobox"
+            title="RadioBox"
+            thumbnail={radiobox}
+            path="https://radiobox.daidesu.dev/"
+          >
+            A remake simple app that helps you to focus on studying-working,
+            built in some easy soundtracks and lofi tracks style from youtube.
+            Also feat with DND feature like Trello helps working more effecient.
           </WorkGridItem>
         </Section>
 
@@ -26,14 +36,53 @@ const Works = () => (
             id="githubspace"
             title="Github space"
             thumbnail={githubspace}
-            path='https://githubspace-cmfsecd6d-xuandai-py.vercel.app'
+            path="https://githubspace.daidesu.dev/"
           >
-            An easy track github profile with basic bio, stars, contributions, ...etc
+            Easy track github profile with basic bio, stars, contributions,
+            ...etc
           </WorkGridItem>
         </Section>
 
         <Section>
-          <WorkGridItem id="hashgen" title="Hash generator" thumbnail={hash} path='https://hash-generator-new9-9b0lys9ri-xuandai-py.vercel.app/'>
+          <WorkGridItem
+            id="portfolio"
+            title="Portfolio"
+            thumbnail={portfolio}
+            path="https://daidesu.dev/"
+          >
+            My personal portfolio
+          </WorkGridItem>
+        </Section>
+
+        <Section>
+          <WorkGridItem
+            id="code-editor"
+            title="Code editor"
+            thumbnail={codeeditor}
+            // path="https://githubspace.daidesu.dev/"
+          >
+            A simple code editor handle with HTML/CSS/JS
+          </WorkGridItem>
+        </Section>
+
+        <Section>
+          <WorkGridItem
+            id="wher-is-the-iss"
+            title="Where is the iss"
+            thumbnail={iss}
+            path="https://whereistheiss.daidesu.dev/"
+          >
+            Code editor handle with HTML/CSS/JS
+          </WorkGridItem>
+        </Section>
+
+        <Section>
+          <WorkGridItem
+            id="hashgen"
+            title="Hash generator"
+            thumbnail={hash}
+            path="https://hash-generator-new9-9b0lys9ri-xuandai-py.vercel.app/"
+          >
             A simple app use bcrypt to hash input and compare.
           </WorkGridItem>
         </Section>
@@ -43,14 +92,13 @@ const Works = () => (
             id="roland"
             title="Roland Bridgecast"
             thumbnail={roland}
-            path='https://rolandbridgecast.netlify.app/'
+            path="https://rolandbridgecast.netlify.app/"
           >
-            An easy track github profile with basic bio, stars, contributions, ...etc
+            An easy track github profile with basic bio, stars, contributions,
+            ...etc
           </WorkGridItem>
         </Section>
       </SimpleGrid>
-
-
     </Container>
   </Layout>
 )
