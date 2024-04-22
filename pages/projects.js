@@ -19,15 +19,8 @@ const Works = () => (
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section>
-          <WorkGridItem
-            id="radiobox"
-            title="RadioBox"
-            thumbnail={radiobox}
-            path="https://radiobox.daidesu.dev/"
-          >
-            A remake simple app that helps you to focus on studying-working,
-            built in some easy soundtracks and lofi tracks style from youtube.
-            Also feat with DND feature like Trello helps working more effecient.
+          <WorkGridItem id="radiobox" title="RadioBox" thumbnail={radiobox} path='https://radio-9od2ikeks-xuandai-py.vercel.app/'>
+            A remake simple app that helps you to focus on studying-working, built in some easy soundtracks and lofi tracks style from youtube. Also feat with DND feature like Trello helps working more effecient.
           </WorkGridItem>
         </Section>
 
