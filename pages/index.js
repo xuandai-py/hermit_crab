@@ -139,7 +139,7 @@ const Home = () => (
             still the thing I concern about - followed the trends come up
             everywhere in tech or non tech fields. My main focus these days is
             building web app based on React-Node and extracting the rust world. When I&apos;m not at
-            coding, running at dawn always a choice and also upgrade my speaking
+            coding, running at dawn always a choice and upgrading my speaking
             languages.
           </Box>
           <Flex direction="column">
@@ -207,7 +207,7 @@ const Home = () => (
         <Heading as="h3" variant="section-title">
           Fields I also concern about:
         </Heading>
-        <Paragraph>Hardware, network, system</Paragraph>
+        <Paragraph>Hardware, network, system, arduino</Paragraph>
         <Heading as="h3" variant="section-title">
           I ♥
         </Heading>

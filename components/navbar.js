@@ -139,7 +139,7 @@ const Navbar = props => {
                     <Icon as={IoLogoGithub} mr={2} mt="-1px" color="#1DB954" />
                     View Source
                   </MenuItem>
-                  <Button
+                  {/* <Button
                     variant="outline"
                     colorScheme="teal"
                     mt={1}
@@ -153,7 +153,7 @@ const Navbar = props => {
                     >
                       Resume
                     </LinkItem>
-                  </Button>
+                  </Button> */}
                 </MenuList>
               </Menu>
             </Box>
