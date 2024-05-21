@@ -245,19 +245,19 @@ const Home = () => (
             </ListItem>
 
             <ListItem>
-              <Link href="mailto:buinguyenxuandai@gmail.com" target="_blank">
+              <Link href="mailto:daidesu.work@gmail.com" target="_blank">
                 <Button
                   variant="ghost"
                   colorScheme="teal"
                   whiteSpace={"normal"}
                   leftIcon={<Icon as={IoLogoGoogle} />}
                 >
-                  buinguyenxuandai@gmail.com
+                  daidesu.work@gmail.com
                 </Button>
               </Link>
             </ListItem>
 
-            <ListItem>
+            {/* <ListItem>
               <Link
                 href="https://www.facebook.com/profile.php?id=100006465675143"
                 target="_blank"
@@ -270,7 +270,7 @@ const Home = () => (
                   @hermit_crab
                 </Button>
               </Link>
-            </ListItem>
+            </ListItem> */}
           </List>
         </Box>
       </Section>

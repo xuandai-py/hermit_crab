@@ -1,7 +1,7 @@
-import NextLink from 'next/link'
-import Image from 'next/image'
-import { Box, Text, LinkBox, LinkOverlay } from '@chakra-ui/react'
+import { Box, LinkBox, LinkOverlay, Text } from '@chakra-ui/react'
 import { Global } from '@emotion/react'
+import Image from 'next/image'
+import NextLink from 'next/link'
 
 export const GridItem = ({ children, href, title, thumbnail }) => (
     <Box w="100%" textAlign="center">
@@ -12,6 +12,7 @@ export const GridItem = ({ children, href, title, thumbnail }) => (
                 className="grid-item-thumbnail"
                 placeholder="blur"
                 loading="lazy"
+              
             />
             <LinkOverlay href={href} target="_blank">
                 <Text mt={2}>{title}</Text>
@@ -23,7 +24,7 @@ export const GridItem = ({ children, href, title, thumbnail }) => (
 
 
 export const WorkGridItem = ({ children, title, thumbnail = '', path = '' }) => (
-    <Box w="100%" textAlign="center">
+    <Box w="100%" textAlign="center" >
         <NextLink href={path} target="_blank">
             <LinkBox cursor="pointer">
                 <Image
@@ -31,12 +32,13 @@ export const WorkGridItem = ({ children, title, thumbnail = '', path = '' }) => 
                     alt={title}
                     className="grid-item-thumbnail"
                     placeholder="blur"
+                    // style={{height: '150px', borderRadius: '12px', objectFit: 'fill' }}
                 />
                 {/* <LinkOverlay href={path}> */}
-                    <Text mt={2} fontSize={20}>
-                        {title}
-                    </Text>
-                    <Text fontSize={14}>{children}</Text>
+                <Text mt={2} fontSize={20}>
+                    {title}
+                </Text>
+                <Text fontSize={14}>{children}</Text>
                 {/* </LinkOverlay> */}
             </LinkBox>
         </NextLink>
