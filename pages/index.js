@@ -15,7 +15,7 @@ import {
 } from "@chakra-ui/react"
 import NextLink from "next/link"
 import {
-  IoLogoFacebook,
+  // IoLogoFacebook,
   IoLogoGithub,
   IoLogoGoogle,
   IoPhonePortrait
